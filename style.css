@@ -1,0 +1,148 @@
+body{
+ background-image: url(fondo.avif);
+}
+
+* {
+    font-family: monospace;
+}
+
+
+h1, h3 {
+    text-align: center;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 40px;
+    padding: 5px;
+    margin-top: 150px;
+}
+
+h3 {
+    font-size: 20px;
+    padding: 10px;
+}
+
+
+#flores {
+    width: 3%;
+    padding: 10px;
+    margin: 15px auto 15px auto ;
+    display: block;
+    border-style: solid;
+    border-radius: 100px;
+    border-color: rgb(255, 250, 250);
+    border-width: 2px;
+}
+
+.navbar {
+    background-color: #ffffff46;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+.idioma {
+    text-align: center;
+    background-color: #d69da093;
+    width: 17%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    padding: 8px;
+  }
+
+a {
+    color: white;
+}
+
+  div.intro {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+#intro {
+    text-align: justify;
+    padding: 25px;
+    width: 40%;
+    margin-left: auto;
+    font-size: 23px;
+    word-spacing: 3px;
+    line-height: 4.0;
+}
+
+.color {
+    font-weight: bold;
+    color: #d69da0;
+}
+
+.portada {
+    float: right;
+    width: 20%;
+    margin-left: 40px;
+    margin-right: auto;
+    padding: 20px;
+    border: double;
+}
+
+
+div.descripcion {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px;
+    border-top: solid black 1px;
+    border-bottom: solid black 1px;
+    font-size: 20px;
+    line-height: 2.0;
+}
+
+div.columna {
+    padding: 10px;
+    margin: 80px auto 20px auto;
+    width: 60%;
+    column-count: 2;
+    column-gap: 40px;
+    column-rule-style: solid;
+    column-rule-width: 2px;
+    border: solid;
+    border-radius: 50px;
+    border-width: 8px;
+    background-color: rgba(255, 255, 255, 0.212);
+}
+
+div.formacion, div.intereses {
+    text-align: center;
+    padding: 5px;
+    font-size: 20px;
+    margin-top: 5px;
+    line-height: 2.3;
+}
+
+#interesestitulo, #formaciontitulo {
+    font-weight: bolder;
+}
+
+div.redes{
+    font-size: 20px;
+    line-height: 2.0;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.logo {
+    width: 4%;
+    border: solid;
+    border-width: 1px;
+    border-radius: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+#mail {
+    background-color: rgba(255, 255, 255, 0.521);
+    color: #d69da0;
+    font-weight: bold;
+    padding: 10px;
+}
