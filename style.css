@@ -56,16 +56,17 @@ a {
     color: white;
 }
 
-  div.intro {
+  .intro {
     display: flex;
-    margin-bottom: 50px;
+    max-width: 80%;
+    margin: auto auto 50px auto;
 }
 
 #intro {
     text-align: justify;
+    max-width: 100%;
     padding: 25px;
-    width: 40%;
-    margin-left: auto;
+    margin: auto 10px auto auto;
     font-size: 23px;
     word-spacing: 3px;
     line-height: 4.0;
@@ -78,15 +79,15 @@ a {
 
 .portada {
     float: right;
-    width: 20%;
-    margin-left: 40px;
-    margin-right: auto;
+    max-width: 100%;
+    height: 550px;
+    margin: 50px auto auto auto;
     padding: 20px;
     border: double;
 }
 
 
-div.descripcion {
+.descripcion {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
@@ -97,7 +98,7 @@ div.descripcion {
     line-height: 2.0;
 }
 
-div.columna {
+.columna {
     padding: 10px;
     margin: 80px auto 20px auto;
     width: 60%;
@@ -111,7 +112,7 @@ div.columna {
     background-color: rgba(255, 255, 255, 0.212);
 }
 
-div.formacion, div.intereses {
+.formacion, .intereses {
     text-align: center;
     padding: 5px;
     font-size: 20px;
@@ -123,7 +124,7 @@ div.formacion, div.intereses {
     font-weight: bolder;
 }
 
-div.redes{
+.redes{
     font-size: 20px;
     line-height: 2.0;
     text-align: center;
