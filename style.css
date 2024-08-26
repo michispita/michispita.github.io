@@ -18,7 +18,7 @@ h1 {
 }
 
 h3 {
-    font-size: 1em;
+    font-size: 1.2em;
     padding: 0.4em;
 }
 
@@ -47,8 +47,8 @@ h3 {
     text-align: center;
     background-color: #d69da093;
     width: 17%;
-    font-size: 0.9em;
-    margin: auto auto 20px auto;
+    font-size: 1em;
+    margin: auto auto 2em auto;
     padding: 0.8em;
   }
 
@@ -60,7 +60,7 @@ a {
     display: flex;
     justify-content: center;
     max-width: 80%;
-    margin: auto auto 50px auto;
+    margin: auto auto 2em auto;
 }
 
 #intro {
@@ -69,7 +69,7 @@ a {
     margin: auto;
     font-size: 1.6em;
     word-spacing: 0.5em;
-    line-height: 8vw;
+    line-height: 5vw;
 
 }
 
@@ -87,7 +87,6 @@ a {
 
 }
 
-
 .descripcion {
     width: 80%;
     margin-left: auto;
@@ -96,13 +95,14 @@ a {
     border-top: solid black 0.1em;
     border-bottom: solid black 0.1em;
     font-size: 1.4em;
+    font-weight: bold;
     line-height: 2.0;
     display: flex;
 }
 
 .columna {
     padding: 1em;
-    margin: 80px auto 20px auto;
+    margin: 3em auto 1em auto;
     width: 40%;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -115,7 +115,7 @@ a {
 .formacion, .intereses {
     text-align: center;
     padding: 0.5em;
-    font-size: 1.2em;
+    font-size: 1.4em;
     margin-top: 1em;
     line-height: 2.3;
 }
@@ -125,7 +125,7 @@ a {
 }
 
 .redes{
-    font-size: 1.2em;
+    font-size: 1.5em;
     line-height: 2.0;
     text-align: center;
     padding: 1.5em;
@@ -133,11 +133,11 @@ a {
 }
 
 .logo {
-    width: 5em;
+    width: 3em;
     margin: auto 1em auto 1em;
     border: solid;
     border-width: 0.5em;
-    border-radius: 3em;
+    border-radius: 1em;
 }
 
 #mail {
@@ -153,9 +153,17 @@ a {
       grid-template-columns: 1fr 1fr;
     }
 
-    h1 {
-        font-size: 3em;
+    #flores {
+        width: 8%;
     }
+
+    h1 {
+        font-size: 2.7em;
+    }
+
+    .idioma {
+        font-size: 0.8em;
+      }
 
     .intro {
         display:block; /* Cambia el display de flex a block */
@@ -168,7 +176,7 @@ a {
         margin: 1em auto 1em auto;
         display: flex;
         justify-content: center;
-        width: 40%;
+        width: 70%;
 
     }
 
@@ -185,11 +193,16 @@ a {
     }
 
     .logo {
-        width: 3em;
+        width: 1.5em;
+    }
+
+    .redes{
+        font-size: 1.3em;
     }
 
     #mail {
         display: flex;
         justify-content: center;
+        margin-top: 1em;
     }
   }
