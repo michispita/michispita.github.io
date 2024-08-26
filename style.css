@@ -79,7 +79,6 @@ a {
 }
 
 .portada {
-    float: right;
     justify-content: center;
     width: 25%;
     margin: auto;
@@ -104,11 +103,9 @@ a {
 .columna {
     padding: 1em;
     margin: 80px auto 20px auto;
-    width: 60%;
-    column-count: 2;
-    column-gap: 3em;
-    column-rule-style: solid;
-    column-rule-width: 0.2em;
+    width: 40%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     border: solid;
     border-radius: 3em;
     border-width: 0.5em;
@@ -150,3 +147,49 @@ a {
     font-weight: bold;
     padding: 0.7em;
 }
+
+@media only screen and (max-width: 600px) {
+    body {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    .intro {
+        display:block; /* Cambia el display de flex a block */
+    }
+
+    #intro {
+        font-size: 1.2em;
+    }
+    .portada {
+        margin: 1em auto 1em auto;
+        display: flex;
+        justify-content: center;
+        width: 40%;
+
+    }
+
+    .descripcion {
+        font-size: 1.2em;
+    }
+
+    .columna {
+        width: 80%;
+    }
+
+    .formacion, .intereses {
+        font-size: 1em;
+    }
+
+    .logo {
+        width: 3em;
+    }
+
+    #mail {
+        display: flex;
+        justify-content: center;
+    }
+  }
