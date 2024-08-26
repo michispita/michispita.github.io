@@ -13,26 +13,26 @@ h1, h3 {
 
 h1 {
     font-weight: 800;
-    font-size: 40px;
-    padding: 5px;
-    margin-top: 150px;
+    font-size: 3.5em;
+    margin-top: 3em;
 }
 
 h3 {
-    font-size: 20px;
-    padding: 10px;
+    font-size: 1.2em;
+    padding: 0.4em;
 }
 
 
 #flores {
     width: 3%;
-    padding: 10px;
-    margin: 15px auto 15px auto ;
-    display: block;
+    padding: 1em;
+    margin: 1.1em auto 1.1em auto ;
+    display: flex;
+    justify-content: center;
     border-style: solid;
-    border-radius: 100px;
+    border-radius: 3em;
     border-color: rgb(255, 250, 250);
-    border-width: 2px;
+    border-width: 0.2em;
 }
 
 .navbar {
@@ -40,36 +40,37 @@ h3 {
     position: fixed;
     top: 0;
     width: 100%;
+    margin: auto;
   }
   
 .idioma {
     text-align: center;
     background-color: #d69da093;
     width: 17%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
-    padding: 8px;
+    font-size: 1em;
+    margin: auto auto 2em auto;
+    padding: 0.8em;
   }
 
 a {
     color: white;
 }
 
-  .intro {
+.intro {
     display: flex;
+    justify-content: center;
     max-width: 80%;
-    margin: auto auto 50px auto;
+    margin: auto auto 2em auto;
 }
 
 #intro {
     text-align: justify;
-    max-width: 100%;
-    padding: 25px;
-    margin: auto 10px auto auto;
-    font-size: 23px;
-    word-spacing: 3px;
-    line-height: 4.0;
+    padding: 3em;
+    margin: auto;
+    font-size: 1.6em;
+    word-spacing: 0.5em;
+    line-height: 5vw;
+
 }
 
 .color {
@@ -78,45 +79,44 @@ a {
 }
 
 .portada {
-    float: right;
-    max-width: 100%;
-    height: 550px;
-    margin: 50px auto auto auto;
-    padding: 20px;
+    justify-content: center;
+    width: 25%;
+    margin: auto;
+    padding: 2em;
     border: double;
-}
 
+}
 
 .descripcion {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    padding: 25px;
-    border-top: solid black 1px;
-    border-bottom: solid black 1px;
-    font-size: 20px;
+    padding: 2em;
+    border-top: solid black 0.1em;
+    border-bottom: solid black 0.1em;
+    font-size: 1.4em;
+    font-weight: bold;
     line-height: 2.0;
+    display: flex;
 }
 
 .columna {
-    padding: 10px;
-    margin: 80px auto 20px auto;
-    width: 60%;
-    column-count: 2;
-    column-gap: 40px;
-    column-rule-style: solid;
-    column-rule-width: 2px;
+    padding: 1em;
+    margin: 3em auto 1em auto;
+    width: 40%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     border: solid;
-    border-radius: 50px;
-    border-width: 8px;
+    border-radius: 3em;
+    border-width: 0.5em;
     background-color: rgba(255, 255, 255, 0.212);
 }
 
 .formacion, .intereses {
     text-align: center;
-    padding: 5px;
-    font-size: 20px;
-    margin-top: 5px;
+    padding: 0.5em;
+    font-size: 1.4em;
+    margin-top: 1em;
     line-height: 2.3;
 }
 
@@ -125,25 +125,84 @@ a {
 }
 
 .redes{
-    font-size: 20px;
+    font-size: 1.5em;
     line-height: 2.0;
     text-align: center;
-    padding: 20px;
-    margin-top: 20px;
+    padding: 1.5em;
+    margin-top: 1em;
 }
 
 .logo {
-    width: 4%;
+    width: 3em;
+    margin: auto 1em auto 1em;
     border: solid;
-    border-width: 1px;
-    border-radius: 20px;
-    margin-right: 10px;
-    margin-left: 10px;
+    border-width: 0.5em;
+    border-radius: 1em;
 }
 
 #mail {
     background-color: rgba(255, 255, 255, 0.521);
     color: #d69da0;
+    font-size: 1.2em;
     font-weight: bold;
-    padding: 10px;
+    padding: 0.3em;
 }
+
+@media only screen and (max-width: 600px) {
+    body {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    #flores {
+        width: 8%;
+    }
+
+    h1 {
+        font-size: 2.7em;
+    }
+
+    .idioma {
+        font-size: 0.8em;
+      }
+
+    .intro {
+        display:block; /* Cambia el display de flex a block */
+    }
+
+    #intro {
+        font-size: 1.2em;
+    }
+    .portada {
+        margin: 1em auto 1em auto;
+        display: flex;
+        justify-content: center;
+        width: 70%;
+
+    }
+
+    .descripcion {
+        font-size: 1.2em;
+    }
+
+    .columna {
+        width: 80%;
+    }
+
+    .formacion, .intereses {
+        font-size: 1em;
+    }
+
+    .logo {
+        width: 1.5em;
+    }
+
+    .redes{
+        font-size: 1.3em;
+    }
+
+    #mail {
+        display: flex;
+        justify-content: center;
+        margin-top: 1em;
+    }
+  }
